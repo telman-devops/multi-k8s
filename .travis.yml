@@ -1,0 +1,33 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t telman/test-react -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI=true telman/test-react npm run test
+
+after_success:
+  - docker build -t telman/multi-client ./client
+  - docker build -t telman/multi-nginx ./nginx
+  - docker build -t telman/multi-server ./server
+  - docker build -t telman/multi-worker ./worker
+  # Log in to the Docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # Take those images and push them to Docker Hub
+  - docker push telman/multi-client
+  - docker push telman/multi-nginx
+  - docker push telman/multi-server
+  - docker push telman/multi-worker
+#deploy:
+#  provider: elasticbeanstalk
+#  region: eu-central-1
+#  app: "docker-react"
+#  env: "DockerReact-env"
+#  bucket_name: "elasticbeanstalk-eu-central-1-677022027905"
+#  bucket_path: "docker-react"
+#  on:
+#    branch: master
+#  access_key_id: $AWS_ACCESS_KEY
+#  secret_access_key: $AWS_SECRET_KEY
