@@ -14,21 +14,22 @@ after_success:
   - docker build -t 870414/multi-server ./server
   - docker build -t 870414/multi-worker ./worker
   # Log in to the Docker CLI
-#  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to Docker Hub
   - docker push 870414/multi-client
   - docker push 870414/multi-nginx
   - docker push 870414/multi-server
   - docker push 870414/multi-worker
-#deploy:
-#  provider: elasticbeanstalk
-#  region: eu-central-1
-#  app: "docker-react"
-#  env: "DockerReact-env"
-#  bucket_name: "elasticbeanstalk-eu-central-1-677022027905"
-#  bucket_path: "docker-react"
-#  on:
-#    branch: master
-#  access_key_id: $AWS_ACCESS_KEY
-#  secret_access_key: $AWS_SECRET_KEY
+
+deploy:
+  edge: true
+  provider: elasticbeanstalk
+  region: eu-central-1
+  app: "docker-multi"
+  env: "DockerMulti-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-677022027905"
+  bucket_path: "docker-multi"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY

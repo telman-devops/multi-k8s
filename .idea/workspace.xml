@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61d71e30-e73d-445c-abbe-533ed5777e78" name="Default Changelist" comment="" />
+    <list default="true" id="61d71e30-e73d-445c-abbe-533ed5777e78" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dockerrun.aws.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +76,8 @@
       <workItem from="1594029617460" duration="1573000" />
       <workItem from="1594094022019" duration="8504000" />
       <workItem from="1594183339079" duration="3738000" />
-      <workItem from="1594199004831" duration="2311000" />
+      <workItem from="1594199004831" duration="3930000" />
+      <workItem from="1594356886396" duration="2879000" />
     </task>
     <servers />
   </component>
