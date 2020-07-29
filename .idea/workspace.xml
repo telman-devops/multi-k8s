@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61d71e30-e73d-445c-abbe-533ed5777e78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/k8s/client-cluster-ip-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/client-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/database-persistent-volume-claim.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/ingress-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/postgres-cluster-ip-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/postgres-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/redis-cluster-ip-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/redis-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/server-cluster-ip-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/sever-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/worker-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerrun.aws.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile.dev" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +85,7 @@
       <workItem from="1595394443421" duration="1606000" />
       <workItem from="1595485456749" duration="865000" />
       <workItem from="1595564541739" duration="5521000" />
-      <workItem from="1595824512816" duration="3003000" />
+      <workItem from="1595824512816" duration="4598000" />
     </task>
     <servers />
   </component>
