@@ -12,7 +12,7 @@ function App() {
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo"/>
-                    <Link to={'/'}>Home</Link>
+                    <Link to={'/'}>K8S</Link>
                     <Link to={'/otherpage'}>Other Page</Link>
                     <div>
                         <Route exact path={'/'} component={Fib}/>
